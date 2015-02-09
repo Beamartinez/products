@@ -20,6 +20,5 @@ public class Test
         stockManager.addProduct(products6);
         stockManager.addProduct(products7);
         
-        products.printProductDetails();
     } 
 }
