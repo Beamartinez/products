@@ -57,6 +57,7 @@ public class StockManager
      */
     public Product findProduct(int id)
     {
+        boolean terminado = false;
         Product productBuscar = null;
         int index = 0;
         while (productBuscar == null && index < stock.size())
@@ -64,6 +65,7 @@ public class StockManager
               if (stock.get(index).getID() == id)
               {
                  productBuscar = stock.get(index);
+                 terminado = true;
               }
               index++;
         }
