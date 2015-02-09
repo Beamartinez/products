@@ -46,7 +46,17 @@ public class StockManager
      */
     public Product findProduct(int id)
     {
-        return null;
+        Product productBuscar = null;
+        int index = 0;
+        while (productBuscar == null && index < stock.size())
+        {
+              if (stock.get(index).getID() == id)
+              {
+                 productBuscar = stock.get(index);
+              }
+              index++;
+        }
+        return productBuscar;
     }
     
     /**

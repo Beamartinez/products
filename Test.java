@@ -2,7 +2,7 @@ public class Test
 {
     public void test1()
     {
-        StockManager StockManager = new StockManager();
+        StockManager stockManager = new StockManager();
         
         Product products1 = new Product(1,"a");
         Product products2 = new Product(2,"b");
@@ -12,9 +12,13 @@ public class Test
         Product products6 = new Product(6,"f");
         Product products7 = new Product(7,"g");
         
-        products.addProduct("products");
-        products.addProduct("products");
-        products.addProduct("products");
+        stockManager.addProduct(products1);
+        stockManager.addProduct(products2);
+        stockManager.addProduct(products3);
+        stockManager.addProduct(products4);
+        stockManager.addProduct(products5);
+        stockManager.addProduct(products6);
+        stockManager.addProduct(products7);
         
         products.printProductDetails();
     } 
